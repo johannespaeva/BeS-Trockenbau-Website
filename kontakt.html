@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | BES Trockenbau</title>
+    <meta
+      name="description"
+      content="Kontaktieren Sie BES Trockenbau für Betonfundamente, Einfahrten, Bodenplatten, Terrassen und gewerbliche Betonflächen."
+    />
+    <link rel="icon" type="image/jpeg" href="assets/bes-trockenbau-logo.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="contact-page">
+    <main class="contact-main">
+      <section class="contact-shell" aria-labelledby="contact-title">
+        <div class="contact-intro">
+          <a class="brand" href="index.html" aria-label="Zurück zur Startseite">
+            <img class="brand-logo" src="assets/bes-trockenbau-logo.jpg" alt="Trockenbau BeS GmbH Logo" />
+          </a>
+
+          <p class="section-kicker legal-kicker">Kontakt</p>
+          <h1 id="contact-title">Projekt anfragen</h1>
+          <p>
+            Erzählen Sie uns kurz, worum es geht. Wir melden uns mit einer klaren Einschätzung zu Ablauf, Zeitplan und nächstem Schritt.
+          </p>
+
+          <div class="contact-methods" aria-label="Direkte Kontaktmöglichkeiten">
+            <a href="tel:+4915207805509">
+              <strong>Telefon</strong>
+              <span>+49 152 078 055 09</span>
+            </a>
+            <a href="mailto:ajeti@trockenbau-bes.de">
+              <strong>E-Mail</strong>
+              <span>ajeti@trockenbau-bes.de</span>
+            </a>
+            <div>
+              <strong>Adresse</strong>
+              <span>Westenhellweg 50, 59494 Soest</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-row two-columns">
+            <div>
+              <label for="email">E-Mail *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div>
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-row two-columns">
+            <div>
+              <label for="project">Projektart <br> auswählen   </label>
+              <select id="project" name="project">
+                <option value="Trennwandsysteme">Trennwandsysteme</option>
+                <option value="Deckensysteme">Deckensysteme</option>
+                <option value="Brandschutzlösungen">Brandschutzlösungen</option>
+                <option value="Raumakustik">Raumakustik</option>
+                <option value="Schallschutz">Schallschutz</option>
+                <option value="Abbrucharbeiten">Abbrucharbeiten</option>
+                <option value="Sonstiges">Sonstiges</option>
+              </select>
+            </div>
+            <div>
+              <label for="timeline">Gewünschter Zeitraum</label>
+              <select id="timeline" name="timeline">
+                <option value="So bald wie möglich">So bald wie möglich</option>
+                <option value="In den nächsten 4 Wochen">In den nächsten 4 Wochen</option>
+                <option value="In 1 bis 3 Monaten">In 1 bis 3 Monaten</option>
+                <option value="Noch offen">Noch offen</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" rows="7" required></textarea>
+          </div>
+
+          <label class="checkbox-row" for="privacy">
+            <input id="privacy" name="privacy" type="checkbox" required />
+            <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Kontaktaufnahme zu.</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit"><span aria-hidden="true">+</span> Anfrage senden</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
